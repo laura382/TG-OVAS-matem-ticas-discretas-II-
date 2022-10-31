@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Conceptos | Matemáticas Discretas II Gramáticas </title>
+<meta name="author" content="Laura Maca" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body id="exe-node-35" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Conceptos</h1></div></header>
+<article class="iDevice_wrapper textIdevice" id="id123">
+<div class="iDevice emphasis0" >
+<div id="ta123_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><span style="font-size: 18pt; font-family: 'book antiqua', palatino, serif; color: #000000;"><em><strong>GRAMÁTICAS </strong></em></span></p>
+<div class="exe-fx exe-tabs">
+<h2><span style="font-size: 10pt;"><strong>¿QUE ES UN ALFABETO?</strong></span></h2>
+<p>Es un conjunto finito no vacío cuyos elementos se llaman símbolos y se denotan con letras minúsculas, se utiliza la letra Σ para denotar el conjunto de símbolos. </p>
+<p>Tenemos por ejemplo el alfabeto latino: {a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s,t,u,v,w,x,y,z} y con este podemos formar palabras como: abb, puma, moto, afed, ababa, las cuales son solo palabras o cadenas sin significado. </p>
+<p><span style="color: #ff0000;"><em><strong>¿Que es un alfabeto binario?</strong></em></span></p>
+<p>Es una secuencia finita de 0 y 1. </p>
+<h2><span style="font-size: 10pt;"><strong>¿QUE ES UNA CADENA?</strong></span></h2>
+<p>Son secuencias ordenadas y finitas de símbolos, por ejemplo: abbb ≠ bbba </p>
+<p><span style="font-family: 'comic sans ms', sans-serif; font-size: 14pt;"><span style="font-family: georgia, palatino, serif;">E: <span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">Denota una cadena vacía (No tiene símbolos).</span></span></span><span style="font-family: 'comic sans ms', sans-serif; font-size: 14pt;"></span></p>
+<h2><span style="font-family: 'comic sans ms', sans-serif; font-size: 10pt;"><span style="font-family: georgia, palatino, serif;"><span style="font-family: helvetica, arial, sans-serif;"> ¿QUE ES LA POTENCIA DE UNA CADENA?</span></span></span></h2>
+<p>Sea X una cadena, se define la potencia como:</p>
+<p><img src="potenciaCadena.PNG" alt="potenciaCadena" title="potenciaCadena" width="186" height="77" style="display: block; margin-left: auto; margin-right: auto;" />Por ejemplo: (a)<sup>3</sup>.(aba)<sup>2</sup> = aaaabaaba</p>
+<h2><span style="font-family: 'comic sans ms', sans-serif; font-size: 10pt;"><span style="font-family: georgia, palatino, serif;"><span style="font-family: helvetica, arial, sans-serif;">¿QUE ES LA LONGITUD DE UNA CADENA?</span></span></span></h2>
+<p><span style="font-family: 'comic sans ms', sans-serif; font-size: 14pt;"><span style="font-family: georgia, palatino, serif;"><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">Sea x una cadena que pertenece a un lenguaje L, su longitud se denota por |x| y se define como:</span></span></span></p>
+<p><span style="font-family: 'comic sans ms', sans-serif; font-size: 14pt;"><span style="font-family: georgia, palatino, serif;"><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;"><img src="longitudCadena.PNG" alt="longitudCadena" title="longitudCadena" width="204" height="89" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></span><span style="font-family: 'comic sans ms', sans-serif; font-size: 14pt;"><span style="font-family: georgia, palatino, serif;"><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">Por ejemplo: |E|= 0</span></span></span></p>
+<p><span style="font-family: 'comic sans ms', sans-serif; font-size: 14pt;"><span style="font-family: georgia, palatino, serif;"><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">|ababaa|= 6 </span></span></span></p>
+</div>
+<p style="text-align: center;"><span style="font-size: 18pt; font-family: 'book antiqua', palatino, serif; color: #ff0000;"><em><strong>LENGUAJE </strong></em></span></p>
+<div class="exe-fx exe-paginated">
+<h2><strong><span style="font-size: 12pt;">¿QUE ES UN LENGUAJE?</span></strong></h2>
+<p>Es un conjunto de palabras en particular, por ejemplo:</p>
+<p>Lenguaje definido sobre <strong>{a,c}</strong>=  {a,a}, {a,c,c}, {c,c,a }, {c,a,c}, {a,a,c,c}, {a,c,c,a} </p>
+<p>Los lenguajes pueden ser descritos con palabras o con notación matemática. </p>
+<h2><strong><span style="font-size: 12pt;">¿QUE ES UN LENGUAJE UNIVERSAL SOBRE Σ?</span></strong></h2>
+<p>Se denota como Σ* y se conoce también como cerradura, Σ* es el lenguaje formado por todas las cadenas sobre el alfabeto Σ.</p>
+<p><span style="color: #ff0000;"><strong>Nota:</strong></span> Siempre se incluye E en Σ* porque la cadena vacía se puede obtener de cualquier alfabeto. </p>
+<p>Para cualquier alfabeto Σ, se tiene que Σ* es infinito ya que Σ no puede ser vacío.</p>
+<h2><span style="font-size: 12pt;">CONCATENACIÓN ENTRE LEGUAJES</span></h2>
+<p><span style="font-size: 12pt;">Sean A y B  lenguajes definidos sobre Σ, la concatenación A*B se define como:</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 12pt;">A*B= { u*v | u ∈ A ∧ v ∈ B }</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">Por ejemplo:<strong> A</strong>={ a, ab, ac }  <strong>B</strong>={ b, b<sup>2 </sup>}</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;"><strong>A*B</strong>={ ab, abb, acb,ab<sup>2</sup>, abb<sup>2</sup>, acb<sup>2</sup> } = { ab, ab<sup>2</sup>, acb, ab<sup>2</sup>, ab<sup>3</sup>, acb<sup>2 </sup>} = <strong>{ ab, ab<sup>2</sup>, acb, ab<sup>3</sup>, acb<sup>2 </sup>} </strong></span></p>
+<h2 style="text-align: left;"><span style="font-size: 12pt;"><strong>POTENCIA DE UN LENGUAJE</strong></span></h2>
+<p><span style="font-size: 12pt;">Dado un lenguaje A sobre Σ se define la potencia como: </span></p>
+<p><span style="font-size: 12pt;"><img src="potenciaLenguaje.PNG" alt="potenciaLenguaje" title="potenciaLenguaje" width="207" height="85" style="display: block; margin-left: auto; margin-right: auto;" /></span><span style="font-size: 12pt;">Un ejemplo seria:<sup>   </sup>A={ ab, b } </span></p>
+<p><span style="font-size: 12pt;">A<sup>3 </sup>= A*A*A ={ ab, b} { ab, b } { ab, b }</span></p>
+<p><span style="font-size: 12pt;">={ ab, b } { ab, abb, bab, bb } = <strong>{ abab, ababb, abbab, abbb, bab, babb, bbab, bbb }</strong></span></p>
+<p><span style="font-size: 12pt;"> </span></p>
+</div>
+<p style="text-align: center;"><span style="color: #ff0000;"><em><strong><span style="font-size: 18pt; font-family: 'book antiqua', palatino, serif;">CERRADURA DE KLEENE</span></strong></em></span></p>
+<p style="text-align: left;">La cerradura de Kleene o cerradura estrella de un lenguaje A es la unión de las potencias, se denota por <strong>A*</strong></p>
+<p style="text-align: center;"><strong>A*= A<sup>0</sup> U A<sup>1</sup> U A<sup>2</sup> U .... A<sup>n</sup> </strong></p>
+<p style="text-align: left;">A* es el conjunto de posibles concatenaciones sobre A. </p>
+<p style="text-align: left;">Por ejemplo: A* para A={ a, ab }</p>
+<p style="text-align: left;">A<sup>0</sup>={ E }  A<sup>1</sup>={ a, ab }  A<sup>2</sup>={ aa, aab, aba, abab } ... seguiría hasta A<sup>n</sup></p>
+<p style="text-align: left;"><span style="color: #ff0000;"><strong><sup>IMPORTANTE:</sup></strong></span></p>
+<ul>
+<li style="text-align: left;"><strong>Σ*</strong> se define sobre el<strong> alfabeto</strong> y corresponde a todas las cadenas que se pueden crear sobre un alfabeto. </li>
+<li style="text-align: left;"><strong>A*</strong> se define sobre un<strong> lenguaje</strong> A  y consiste en todas las concatenaciones posibles. </li>
+</ul>
+<div class="exe-fx exe-accordion">
+<h2>CERRADURA  POSITIVA DE KLEENE A<sup>+</sup></h2>
+<p>La cerradura positiva de Kleene de un lenguaje A es la unión de las potencias sin incluir A<sup>0</sup>={ E } </p>
+<p style="text-align: center;"> <strong>A<sup>+</sup>= A<sup>1</sup> U A<sup>2</sup> U A<sup>3</sup> U ... A<sup>n</sup> </strong></p>
+<h2>CERRADURA POSITVA DE KLEENE Σ<sup>+</sup></h2>
+<p>Es el conjunto de palabras que se pueden formar sobre Σ sin incluir la cadena vacía (E). </p>
+</div>
+<p style="text-align: center;"><span style="color: #ff0000;"><em><strong><span style="font-size: 18pt; font-family: 'book antiqua', palatino, serif;">LENGUAJES REGULARES </span></strong></em></span><br /><br /></p>
+<div class="exe-fx exe-carousel">
+<h2>¿QUE ES UN LENGUAJE REGULAR?</h2>
+<p>Dado un alfabeto Σ, los lenguajes regulares sobre tal alfabeto se definen recursivamente como: </p>
+<p>0 Es un lenguaje regular. </p>
+<p>{ E }: Es un lenguaje regular.</p>
+<p>Si A y B son lenguajes regulares entonces AUB, A*B, A* son lenguajes regulares.</p>
+<p><span style="color: #ff0000;">NOTA: <span style="color: #000000;">Siempre que se requiera almacenamiento ilimitado para almacenar el conteo y luego compararlo con otros conteos ilimitados, se dice entonces que el <strong>lenguaje no es regular</strong>. </span></span></p>
+<p> </p>
+<h2>¿QUE ES UNA EXPRESIÓN REGULAR? </h2>
+<p>Es una forma simplificada de representar un lenguaje regular.</p>
+<table border="1" style="width: 30.2546%; height: 130px;" height="130">
+<tbody>
+<tr style="height: 20px;">
+<td style="width: 50%; text-align: center; height: 20px;">Lenguaje regular</td>
+<td style="width: 50%; text-align: center; height: 20px;">Expresión regular</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 50%; text-align: center; height: 20px;">{ab}</td>
+<td style="width: 50%; text-align: center; height: 20px;">ab</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 50%; text-align: center; height: 20px;">{a}*</td>
+<td style="width: 50%; text-align: center; height: 20px;">a*</td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 50%; text-align: center; height: 22px;">{a}<sup>+</sup></td>
+<td style="width: 50%; text-align: center; height: 22px;">a<sup>+</sup></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 50%; text-align: center; height: 20px;">{a} U {b}</td>
+<td style="width: 50%; text-align: center; height: 20px;">aUb</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</div>
+<p style="text-align: center;"><br /><strong><em><span style="color: #ff0000; font-size: 18pt; font-family: 'book antiqua', palatino, serif;">AUTÓMATAS FINITOS </span></em></strong></p>
+<p style="text-align: left;">Un autómata finito es un modelo computacional que realiza cómputos en forma automática sobre una entrada para producir una salida.</p>
+<p style="text-align: left;">La operación de la maquina consiste en un conjunto de estados internos y la cabeza del autómata solo puede leer, no escribir, y se mueve siempre a la derecha leyendo un símbolo a la vez. </p>
+<p style="text-align: left;">Se puede representar por medio de un grafo dirigido conocido como un diagrama de transición.</p>
+<p style="text-align: left;"><span style="color: #ff0000;"><span style="color: #000000;">Cuenta con</span><strong> Nodos (Estados): </strong><span style="color: #000000;">Estado inicial y estado de aceptación, y </span></span><span style="color: #ff0000;"><strong>Aristas (Transiciones). </strong></span></p>
+<p style="text-align: left;"><span style="color: #000000;">Cada avance del autómata depende de: (símboloLeido, estadoActual). </span></p>
+<p style="text-align: left;"><span style="color: #000000;"><img src="automataFinitos.png" alt="automataFinito" title="automataFinito" width="243" height="107" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p>FA se caracteriza en dos tipos: Autómatas finitos deterministas y autómatas finitos no deterministas. </p>
+<p style="text-align: left;"><span style="color: #ff0000;"><strong><em>TEOREMA DE KLEENE</em> </strong></span></p>
+<p style="text-align: left;">Un lenguaje es regular si y solo si es aceptado por un autómata finito. </p>
+<div class="exe-fx exe-accordion">
+<h2><span style="font-size: 14pt;">AUTÓMATA FINITO DETERMINISTA (AFD-DFA)</span></h2>
+<p>En un autómata finito determinista, para un carácter de entrada en particular, la máquina pasa a un solo estado. Se define una función de transición en cada estado para cada símbolo de entrada. Además, en DFA no se permite el movimiento nulo (o ε), es decir, DFA no puede cambiar de estado sin ningún carácter de entrada.</p>
+<p>Es una colección de 5 elementos:</p>
+<ul>
+<li>Un alfabeto Σ</li>
+<li>Una colección finita de estados Q</li>
+<li>Un estado inicial q<sub>0 </sub></li>
+<li>Una colección finita de estados de aceptación (T)</li>
+<li>Una función S:Q<span style="font-size: 10pt;">x</span>Σ ⇒ Q que determina el único estado siguiente para el par (q<sub>i</sub>,σ) correspondiente al estado actual q<sub>i</sub> y la entrada σ. </li>
+</ul>
+<p><strong>S:</strong> Debe ser una función para que exista el determinismo. </p>
+<h2><span style="font-size: 14pt;">AUTÓMATA FINITO NO DETERMINISTA (AFND-NFA)</span></h2>
+<p>NFA es similar a DFA excepto por las siguientes características adicionales: </p>
+<p>1.   Se permite el movimiento nulo (o ε), es decir, puede avanzar sin leer símbolos. </p>
+<p>2.   Capacidad de transmitir a cualquier número de estados para una entrada en particular. </p>
+<p>Si se permite que desde algún estado se realicen 0 o 2 o mas transiciones mediante el mismo símbolo de entrada, se dice que el autómata finito no es determinista. </p>
+<p>Es una colección de 5 elementos:</p>
+<ul>
+<li>Un alfabeto Σ</li>
+<li>Una colección finita de estados Q</li>
+<li>Un estado inicial q<sub>0 </sub></li>
+<li>Una colección finita de estados de aceptación (T)</li>
+<li>Una relación Δ sobre (Q<span style="font-size: 10pt;">x</span>Σ) ⇒ 2<sup>Q</sup> denominada relación de transición; 2<sup>Q</sup> es el conjunto potencia de Q (subconjuntos de Q).</li>
+</ul>
+</div>
+<p style="text-align: left;"></p>
+<p style="text-align: center;"><strong></strong></p>
+<p></p>
+<p></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p><span style="font-size: 16.8px;">Aquí podrás encontrar más información sobre lenguajes y gramáticas:</span></p>
+<p><span style="color: #ff0000;"><strong>https://www.geeksforgeeks.org/introduction-of-finite-automata/?ref=lbp</strong></span></p>
+<p><span style="color: #ff0000;"><strong>https://www.geeksforgeeks.org/regular-expressions-regular-grammar-and-regular-languages/?ref=lbp</strong></span></p></div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
