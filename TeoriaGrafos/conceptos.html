@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Conceptos | Matematicas Discretas II </title>
+<meta name="author" content="Laura Maca" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body id="exe-node-33" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Conceptos</h1></div></header>
+<article class="iDevice_wrapper textIdevice" id="id121">
+<div class="iDevice emphasis0" >
+<div id="ta121_114_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 18pt; color: #ff0000;"><em><strong>¿QUE ES UN GRAFO?</strong></em></span></p>
+<p>Es una estructura de datos común que consta de un conjunto finito de nodos (o vértices) y un conjunto de lineas (o aristas) que los conectan; un grafo puede ser finito o infinito. </p>
+<p><img src="descarga.png" alt="grafo" title="que es un grafo " width="188" height="179" style="display: block; margin-left: auto; margin-right: auto;" /> </p>
+<div class="exe-fx exe-tabs">
+<h2>¿Que es un grafo vacío?</h2>
+<p>También llamado grafo nulo, es un grafo en el que no hay aristas entre ninguno de sus vértices. </p>
+<h2>¿Que es un grafo simple?</h2>
+<p>Es un grafo en el que cada arista conecta 2 vértices diferentes y donde 2 aristas no conectan el mismo par de vértices, es un <strong>grafo no dirigido</strong> en el que hay como máximo una arista entre cada par de vértices y <strong>no hay bucles</strong> (Que es una arista desde un vértice hacia sí mismo). </p>
+<p><img src="SIMPLE-GRAPH.jpg" alt="Grafo simple" title="Grafo simple " width="296" height="195" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2>¿Que es un multigrafo o pseudografo?</h2>
+<p>Es un grafo en el que varias aristas pueden conectar el mismo par de vértices o <strong>hay bucles</strong>.</p>
+<p><img src="1200px-Multigraph.svg.png" alt="Multigrafo " title="Multigrafo " width="171" height="186" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2>¿Que es un grafo bipartito?</h2>
+<p>Es un grafo G que se puede dividir en dos conjuntos disjuntos, V1 y V2, de tal forma que cada arista del grafo une un vértice V1 a un vértice en V2, pero los vértices de V1 y V2 no pueden ser adyacentes. </p>
+<p><img src="200px-Grafo_con_dos_subconjuntos.jpg" alt="bipartito" title="Bipartito" width="200" height="208" style="display: block; margin-left: auto; margin-right: auto;" /><span style="color: #ff0000;"><strong>GRAFO BIPARTITO COMPLETO</strong></span></p>
+<p><span style="color: #000000;">Es un grafo bipartito, todos los vértices del conjunto A están conectados con los vértices del conjunto B. </span></p>
+<p><span style="color: #ff0000;"><strong><img src="bipartito_completo.gif" alt="Bipartito completo" title="Bipartito completo" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;" /></strong></span></p>
+<p></p>
+</div>
+<p style="text-align: center;"><span style="font-family: 'book antiqua', palatino, serif; color: #ff0000;"><em><span style="font-size: 14pt;"><strong>GRAFO DIRIGIDO </strong></span></em></span></p>
+<p>Es un grafo en el que las aristas están dirigidas por flechas, lo que indica la relación representada por la arista, solo se aplica de un vértice al otro, pero no al revés.</p>
+<p><img src="grafoDirigido.gif" alt="grafoDirigido" title="grafoDirigido" width="173" height="164" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: center;"><span style="font-family: 'book antiqua', palatino, serif; color: #ff0000;"><em><span style="font-size: 14pt;"><strong>GRAFO NO DIRIGIDO </strong></span></em></span></p>
+<p>Es un grafo donde los nodos están conectados por aristas bidireccionales (No tiene flechas). </p>
+<p><img src="grafoNoDirigido.gif" alt="grafoNoDirigido" title="grafoNoDirigido" width="218" height="206" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p>
+<div class="exe-fx exe-tabs">
+<h2>Grado de un vértice</h2>
+<p>De un grafo <strong>no dirigido</strong>  es el número de aristas que inciden con él, excepto el bucle propio que contribuye dos veces al grado del vértice.</p>
+<p>En el caso de grafos <strong>dirigidos</strong>, el grado se clasifica además como de grado de entrada y de grado de salida. </p>
+<h2>Secuencia de grado</h2>
+<p>Es la secuencia de los grados de los vértices del grafo en orden decreciente (De mayor a menor).</p>
+<p><img src="ruedaEjSecuencia.PNG" alt="EjSecuencia " title="EjSecuencia " width="121" height="125" />     Secuencia de grado de W4= 4,3,3,3</p>
+</div>
+<p style="text-align: center;"><span style="font-family: 'book antiqua', palatino, serif; color: #ff0000;"><em><strong><span style="font-size: 14pt;">FAMILIAS DE GRAFO SIMPLE </span></strong></em></span></p>
+<div class="exe-fx exe-accordion">
+<h2>GRAFO COMPLETO </h2>
+<p>Es un grafo donde un vértice esta conectado con todos los demás vértices. </p>
+<p><img src="completo.png" alt="Grafo completo" title="Grafo completo" width="168" height="168" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2>CICLO</h2>
+<p>Es un grafo donde cada vértice se conecta solo con su vecino. </p>
+<p><img src="ciclo.jpg" alt="Ciclo" title="Ciclo" width="218" height="156" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2>RUEDA </h2>
+<p>Es un grafo similar al ciclo solo que se le agrega un vértice en el medio con el cual todos están conectados. </p>
+<p><img src="rueda.png" alt="Rueda" title="Rueda" width="202" height="183" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+<p style="text-align: center;"> <span style="font-family: 'book antiqua', palatino, serif; color: #ff0000;"><em><span style="font-size: 14pt;"><strong>TEOREMA DE HANDSHAKING (Lema del apretón de manos)</strong></span></em></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">Sea G=(V,E) un <strong>grafo no dirigido</strong> con e aristas, entonces:</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;"><img src="teorema.PNG" alt="Teorema" title="Teorema" width="189" height="73" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">Incluso si hay aristas múltiples y bucles en el grafo; la suma debe dar un numero <strong>par</strong>. </span><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">Para <strong>grafos dirigidos</strong> se tienen 2 grados, el grado de entrada y el grado de salida, los bucles cuentan de entrada y salida, entonces:</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;"><img src="dirigido_teorema.PNG" alt="grafo dirigido teorema " title="grafo dirigido teorema " width="281" height="62" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<div class="exe-fx exe-carousel">
+<h2>SUBGRAFO</h2>
+<p>Un subgrafo de un grafo G es un grafo cuyos conjuntos de vértices y aristas son subconjuntos de los de G, si V(H) están incluidos en V(G) y E(H) están incluidos en E(G) se considera un subgrafo, puede ser dirigido o no, en caso de ser dirigido debe conservar la misma dirección que en el grafo original. </p>
+<p><img src="Subgrafo.PNG" alt="Subgrafo" title="Subgrafo" width="452" height="129" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2>SUBGRAFO RECUBRIDOR</h2>
+<p>Es un subgrafo que debe mantener el mismo número de vértices que el grafo original. </p>
+<h2><strong>SUBGRAFO INDUCIDO </strong></h2>
+<p>Es un subgrafo que se obtiene tomando los vértices del grafo G y las aristas que son incidentes. </p>
+<p>(Debe conservar las aristas de los vértices que se seleccionen)</p>
+<h2>GRAFOS COMPLEMENTARIOS </h2>
+<p>Es un grafo simple no dirigido, el complemento de G se denota G' y contiene los mismos vértices de G y las aristas que en G faltan por conectar. </p>
+<p><img src="Complemeto_de_un_grafo.PNG" alt="Complemento" title="Complemento" width="397" height="244" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ff0000;"><strong>SECUENCIA DE GRADO DE GRAFO COMPLEMENTARIO:</strong></span> Para hallar la secuencia de grado de un grafo complementario primero se saca la secuencia de grado del grafo G, posteriormente sacamos la secuencia de grado del grafo completo y restamos ambas secuencias de grado y como resultado obtenemos la secuencia de grado del grafo G'.</p>
+<p><span style="color: #ff0000;">Ejemplo: <span style="color: #000000;">Obtener la secuencia de grado del grafo C<sub>5 </sub></span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;"><img src="C5.png" alt="grafoC5" title="grafoC5" width="149" height="136" /> C<sub>5</sub>={2,2,2,2,2} </span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;">Grafo completo: K<sub>5</sub>={4,4,4,4,4}, se restan ambas secuencias y obtenemos C'<sub>5</sub></span></span>={2,2,2,2,2} </p>
+<p><img src="grafoC5complemento.PNG" alt="C5complemento" title="C5complemento" width="213" height="182" /> Cada vértice tiene 2 aristas. </p>
+<h2>GRAFO PLANO </h2>
+<p>Un grafo plano o multigrafo es plano si podemos dibujar G en el plano de modo que sus aristas se intersectan solo en los vértices de G, es decir dibujar el G sin que las lineas se crucen. </p>
+<p>Las áreas que están rodeadas por vértices las llamamos regiones. </p>
+<p><span style="color: #ff0000;"><strong>TEOREMA: </strong><span style="color: #000000;">Sea G un grafo simple conexo con e aristas y v vértices, sea r el numero de regiones de una representación plana de G. Entonces, <strong>r= e-v+2.</strong></span></span></p>
+<p><span style="color: #ff0000;">Observaciones: <span style="color: #000000;">Sea G=(V,E) un grafo plano sin bucles con |v|=v, |E|= e &gt; 2 y r regiones entonces, <strong>3r ≤ 2e</strong> y <strong>e ≤</strong> <strong>3v - 6 </strong>si se cumplen estos criterios puede ser que el grafo sea plano, pero si no cumple alguno de los criterios el grafo no es plano. </span></span></p>
+<p></p>
+</div>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong> </strong></span><span style="font-size: 14pt;"><strong></strong></span></p>
+<p style="text-align: center;"><span style="color: #ff0000;"><em><span style="font-size: 14pt; font-family: 'book antiqua', palatino, serif;"><strong>CONECTIVIDAD</strong></span></em></span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">Si existe un camino entre un par de vértices, es decir, una conexión de aristas por las cuales debo pasar para llegar de un vértice a otro se dice que hay conectividad.</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">Se utiliza la matriz de adyacencia: MR<sup>1</sup>⇒ Representa camino de 1 grado</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">MR<sup>2</sup>⇒ Representa camino de grado 2, (Se eleva la matriz MR<sup>1</sup> al cuadrado). </span></p>
+<div class="exe-fx exe-accordion">
+<h2>CAMINOS</h2>
+<p>Es una secuencia de aristas desde un vértice dado hasta otro vértice. Un conjunto de vértices de V<sub>0 </sub>a V<sub>n</sub>.</p>
+<p><span style="color: #ff0000;"><strong>CAMINO SIMPLE: </strong><span style="color: #000000;">Es un camino que no repite aristas. </span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><strong>CAMINO CERRADO O CIRCUITO:</strong> <span style="color: #000000;">Es un camino que empieza en un nodo dado y termina en el mismo nodo, es decir, si empieza en v<sub>0</sub> termina en v<sub>0</sub>; puede repetir vértices y aristas. </span></span></span></span></p>
+<p><span style="color: #ff0000;"><strong>LONGITUD DE UN CAMINO:</strong></span> Es el numero de aristas que recorre el camino, un camino de longitud n debe tener n+1 vértices. </p>
+<h2>GRAFO CONEXO </h2>
+<p><span style="color: #ff0000;"><strong>¿QUE ES UN GRAFO CONEXO?</strong> </span>Es aquel que existe un camino entre cada par de nodos o vértices. </p>
+<p><span style="color: #ff0000;"><strong>¿QUE ES UN GRAFO NO CONEXO?</strong></span> Es aquel en que no existe un camino entre ciertos pares de nodos. </p>
+<p><img src="Grafo_conexo_y_no_conexo.PNG" alt="GrafoConexoNoconexo" title="GrafoConexoNoconexo" width="286" height="120" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ff0000;"><strong>¿QUE ES UN GRAFO DEBILMENTE CONEXO?</strong></span> Un grafo dirigido es débilmente conexo si hay un camino entre cada dos vértices del grafo no dirigido subyacente.</p>
+<p><span style="color: #ff0000;"><strong>¿QUE ES UN GRAFO FUERTEMENTE CONEXO?</strong></span> Un grafo dirigido es fuertemente conexo si hay un camino de A a B y de B a A para cualquiera dos vértices A y B en el grafo. </p>
+<h2>GRAFO ACICLICO DIRIGIDO </h2>
+<p>Es un grafo que no tiene ciclos, un ejemplo de este podría ser un árbol. </p>
+<p><img src="grafoAciclicloD.png" alt="GrafoArbol" title="GrafoArbol" width="192" height="160" /></p>
+</div>
+<p></p>
+<p style="text-align: center;"><span style="font-size: 12pt;"></span><span style="font-family: 'book antiqua', palatino, serif;"><span style="color: #ff0000; font-size: 14pt;"><em><strong>REPRESENTACIONES DE GRAFO</strong></em></span> </span></p>
+<div class="exe-fx exe-tabs">
+<h2><span style="font-size: 12pt;">MATRIZ DE ADYACENCIA </span></h2>
+<p>Es una matriz que representa las conexiones entre pares de vértices, un vértice es adyacente a otro si son vecinos (Es decir, comparten la misma arista). </p>
+<p>Ejemplo: Tenemos una matriz de adyacencia donde ponemos un 1 cuando dos vértices son vecinos, a es vecino de b, d, e porque comparten una arista entre si, por lo tanto ponemos 1 en la matriz. </p>
+<p style="text-align: center;"><img src="grafo-y-matriz2.gif" alt="matrizAdyacencia" title="matrizAdyacencia" width="363" height="192" /></p>
+<h2><span style="font-size: 12pt;">MATRIZ DE INCIDENCIA </span></h2>
+<p>Es una matriz binaria de <strong>vértices</strong> <span style="font-size: 10pt;">vs.</span> <strong>aristas</strong> en donde si la arista es incidente con el vértice se marca con un 1, y se utiliza 0 de lo contrario. </p>
+<p><img src="MatrizDeIncidencia.jpg" alt="matrizIncidencia " title="matrizIncidencia " width="311" height="148" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<h2><span style="font-size: 12pt;">LISTA DE ARISTAS</span></h2>
+<p><span style="font-size: 12pt;">Es una lista de pares de vértices conectados.</span></p>
+<p><span style="font-size: 12pt;"><img src="Captura.PNG" alt="ejemploLista " title="ejemploLista " width="208" height="143" /> </span><span style="font-size: 12pt;">{a,b}, {b,d}, {d,c}, {c,a}</span></p>
+</div>
+<div class="exe-fx exe-carousel">
+<h2>EULER </h2>
+<p>Un <strong>circuito de Euler</strong> en un grafo G, es un circuito simple que pasa exactamente una vez por cada arista de G.  </p>
+<p><span style="color: #ff0000;"><strong>Regla:</strong></span> Los vértices deben tener grado <strong>par</strong> para que tenga un circuito de Euler. </p>
+<p>Un <strong>camino de Euler</strong> en G, es un camino simple que pasa exactamente una vez por cada arista. </p>
+<p><span style="color: #ff0000;"><strong>Regla:</strong></span> Deben haber dos vértices de grado impar, y el resto de grado par para que el grafo tenga un camino de Euler. </p>
+<p><span style="color: #ff0000;"><strong>Regla general: </strong><span style="color: #000000;">El grafo puede tener un camino euleriano, pero no un circuito euleriano o viceversa. </span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;"><img src="euler.gif" alt="grafoeuler" title="grafoeuler" width="238" height="238" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<h2>HAMILTON </h2>
+<p>Un camino de Hamilton en un grafo G es un camino simple que pasa exactamente una vez por cada vértice. </p>
+<p>Un circuito de Hamilton en un grafo G es un circuito simple que pasa exactamente una vez por cada vértice, inicia y termina en el mismo vértice.  </p>
+<p><span style="color: #ff0000;"><strong>Nota:</strong></span> No se pueden repetir vértices.</p>
+<p><strong><span style="color: #ff0000;">Teorema de DIRAC: </span></strong><span style="color: #ff0000;"><span style="color: #000000;">Sea G un grafo simple con n vértices para n ≥ 3 tal que todos los vértices de G tienen grado mayor o igual que n/2. Entonces, G contiene un circuito hamiltoniano.</span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><strong>Teorema de ORE:</strong></span> Sea G un grafo simple con n vértices para n ≥ 3 tal que S(u) + S(v) ≥ n para cada par de vértices no adyacentes u y v de G. Entonces, G contiene un circuito hamiltoniano. </span></span><span style="color: #ff0000;"><span style="color: #000000;"></span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;"><img src="Hamiltonian_path.svg.png" alt="grafohamilton" title="grafohamilton" width="276" height="264" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+</div>
+<p style="text-align: left;"></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p>Aquí podrás encontrar más información sobre teoría de grafos: </p>
+<p><span style="color: #ff0000;"><strong>https://www.geeksforgeeks.org/mathematics-graph-theory-basics-set-1/?ref=lbp</strong></span></p></div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
