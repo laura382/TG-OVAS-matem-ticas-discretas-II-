@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Ejemplos | Matematicas Discretas II </title>
+<meta name="author" content="Laura Maca" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body id="exe-node-29" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Ejemplos</h1></div></header>
+<article class="iDevice_wrapper textIdevice" id="id119">
+<div class="iDevice emphasis0" >
+<div id="ta119_112_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 18pt;"><em><span style="color: #ff0000;"><strong>EJEMPLOS</strong></span></em></span></p>
+<p style="text-align: left;"><span style="color: #ff0000;">1.</span> ¿Cuál es el número de aristas del grafo?    <img src="grafo.PNG" alt="Grafo" title="Grafo" width="320" height="200" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ff0000;"><strong>R\.</strong></span> Primero contamos el número de aristas de cada vértice</p>
+<p>a= 4, b= 6, c= 1, d= 5, e= 6 </p>
+<p>Sumamos todas las aristas</p>
+<p>4+6+1+5+6= 22</p>
+<p>Utilizamos el teorema de Handshaking para saber cuantas aristas tiene el grafo</p>
+<p>2e= 22</p>
+<p>e= 22/2 = 11</p>
+<p>El total de aristas de H son 11. </p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">2.</span> ¿Cuántas aristas hay en un grafo con 10 vértices, cada uno de los cuales tiene grado 6?</span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong></span> Como cada uno de los vértices tiene grado 6, multiplicamos 6 por el número de vértices</span></p>
+<p><span style="font-size: 16.8px;">2e= 6*10</span></p>
+<p><span style="font-size: 16.8px;">2e= 60</span></p>
+<p><span style="font-size: 16.8px;">e= 60/2 = 30 </span></p>
+<p><span style="font-size: 16.8px;">El número total de aristas es 30.  </span></p>
+<p><span style="font-size: 16.8px;"></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">3.</span> ¿Es bipartito el siguiente grafo?</span><span style="font-size: 16.8px;"></span><span style="font-size: 16.8px;"><img src="Grafo2ejemp.PNG" alt="Grafobipartito" title="Grafobipartito" width="324" height="161" style="display: block; margin-left: auto; margin-right: auto;" /></span><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong> </span>Primero intentamos separar en 2 conjuntos los vértices, pero no es posible ya que f, a, y e forman un triángulo, por lo tanto sus vértices no se pueden dividir en 2 subconjuntos de modo que las aristas no conecten ningún par de vértices de un mismo subconjunto.</span><span style="font-size: 16.8px;"></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">4.</span> Halla los grados de entrada y salida de cada vértice del grafo dirigido G que se muestra: </span></p>
+<p><span style="font-size: 16.8px;"><img src="eje4gradosVertice.PNG" alt="eje4Grados" title="eje4Grados" width="289" height="184" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong></span> Los grados de entrada del grafo son: S<sup>-</sup>(a)= 2, S-(b)=2, S-(c)=3, S-(d)=2, S-(e)=3, S-(f)=0</span></p>
+<p><span style="font-size: 16.8px;">Los grados de salida son: S+(a)=4, S+(b)=1, S+(c)=2, S+(d)=2, S+(e)=3, S+(f)=0</span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">5.</span> Indique si el grafo representado por la siguiente matriz de adyacencia es bipartito.</span></p>
+<table border="1" style="width: 30.7%; height: 180px;" height="230">
+<tbody>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>a</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>b</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>c</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>d</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>f</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>g</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>h</strong></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>a</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>b</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>c</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>d</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>f</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>g</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>h</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong><span style="font-size: 16.8px;"><span style="color: #ff0000;">R\. </span></span></strong><span style="font-size: 16.8px;"><span style="color: #ff0000;"><span style="color: #000000;">Dibujamos el grafo dado por la matriz:</span></span></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><span style="color: #000000;"><img src="eje5matrizBipartito.PNG" alt="eje5Bipartito" title="eje5Bipartito" width="381" height="197" /></span></span></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><span style="color: #000000;">Separamos en dos grupos los vértices donde los vértices del mismo grupo no pueden estar conectados, pero los vértices a, c, h están conectados entre si, por lo que si ponemos a en un grupo, c debe estar en otro y h en otro diferente y solo son 2 grupos por lo tanto no hay forma de que sea un grafo bipartito. </span></span></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">6.</span> Utiliza una matriz de adyacencia para representar el pseudografo que se muestra en la figura. </span></p>
+<p><span style="font-size: 16.8px;"></span></p>
+<p><span style="font-size: 16.8px;"><img src="adyacen.PNG" alt="matrizAdyacencia" title="matrizAdyacencia" width="171" height="174" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong></span> Se crea la matriz contando las aristas de cada vértice, </span></p>
+<ul>
+<li><span style="font-size: 16.8px;">De a hacia a no hay ninguna arista, de a hacia b hay 3 aristas, de a hacia c no hay ninguna arista, de a hacia d hay 2 aristas;</span></li>
+<li><span style="font-size: 16.8px;">De b hacia a hay 3 aristas, de b hacia b no hay aristas, de b hacia c hay 1 arista, de b hacia d hay 1 arista.</span></li>
+<li><span style="font-size: 16.8px;">De c hacia a no hay aristas, de c hacia b hay una arista, de c hacia c hay una arista, de c hacia d hay 2 aristas. </span></li>
+<li><span style="font-size: 16.8px;">De d hacia a hay 2 aristas, de d hacia b hay 1 arista, de d hacia c hay 2 aristas, y de d hacia d no hay ninguna arista. </span><span style="font-size: 16.8px;"></span></li>
+</ul>
+<p><span style="font-size: 16.8px;">Esto lo representamos en la matriz: </span></p>
+<table border="1" style="width: 13.0178%; height: 113px;" height="113">
+<tbody>
+<tr style="height: 20px;">
+<td style="width: 20%; height: 20px; text-align: center;"></td>
+<td style="width: 20%; height: 20px; text-align: center;"><strong>a</strong></td>
+<td style="width: 20%; height: 20px; text-align: center;"><strong>b</strong></td>
+<td style="width: 20%; height: 20px; text-align: center;"><strong>c</strong></td>
+<td style="width: 20%; height: 20px; text-align: center;"><strong>d</strong></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 20%; height: 20px; text-align: center;"><strong>a</strong></td>
+<td style="width: 20%; height: 20px; text-align: center;">0</td>
+<td style="width: 20%; height: 20px; text-align: center;">3</td>
+<td style="width: 20%; height: 20px; text-align: center;">0</td>
+<td style="width: 20%; height: 20px; text-align: center;">2</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 20%; height: 20px; text-align: center;"><strong>b</strong></td>
+<td style="width: 20%; height: 20px; text-align: center;">3</td>
+<td style="width: 20%; height: 20px; text-align: center;">0</td>
+<td style="width: 20%; height: 20px; text-align: center;">1</td>
+<td style="width: 20%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 20%; height: 20px; text-align: center;"><strong>c</strong></td>
+<td style="width: 20%; height: 20px; text-align: center;">0</td>
+<td style="width: 20%; height: 20px; text-align: center;">1</td>
+<td style="width: 20%; height: 20px; text-align: center;">1</td>
+<td style="width: 20%; height: 20px; text-align: center;">2</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 20%; height: 20px; text-align: center;"><strong>d</strong></td>
+<td style="width: 20%; height: 20px; text-align: center;">2</td>
+<td style="width: 20%; height: 20px; text-align: center;">1</td>
+<td style="width: 20%; height: 20px; text-align: center;">2</td>
+<td style="width: 20%; height: 20px; text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 16.8px; text-align: center;"><span style="color: #ff0000;">7.</span> Representa el pseudografo que se muestra en la figura usando una matriz de incidencia </span></p>
+<p style="text-align: center;"><span style="font-size: 16.8px;"><img src="Incidencia.PNG" alt="matrizIncidencia" title="matrizIncidencia" width="293" height="187" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: left;"><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong> </span>La matriz de incidencia la creamos poniendo un 1 cuando el vértice incide con la arista. </span></p>
+<ul>
+<li style="text-align: left;"><span style="font-size: 16.8px;">El v<sub>1</sub> incide con la arista e1, e2, e3.</span></li>
+<li style="text-align: left;"><span style="font-size: 16.8px;">El v<sub>2</sub> incide con la arista e2, e3, e4, e6, e7. </span></li>
+<li style="text-align: left;"><span style="font-size: 16.8px;">El v<sub>3</sub> incide con la arista e4, e5.</span></li>
+<li style="text-align: left;"><span style="font-size: 16.8px;">El v<sub>4</sub> incide con la arista e7, e8.</span></li>
+<li style="text-align: left;"><span style="font-size: 16.8px;">El v<sub>5</sub> incide con la arista  e5, e6. </span></li>
+</ul>
+<table border="1" style="width: 28.1065%; height: 120px;" height="130">
+<tbody>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e1</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e2</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e3</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e4</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e5</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e6</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e7</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>e8</strong></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>v1</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>v2</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>v3</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>v4</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>v5</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"><span style="font-size: 16.8px;"><span style="color: #ff0000;">8.</span> ¿Cuáles de los grafos no dirigidos contienen un circuito euleriano? Entre aquellos que no lo contienen, ¿cuáles contienen un camino euleriano?</span></p>
+<p style="text-align: center;"><span style="font-size: 16.8px;"><img src="G1Nuevo.PNG" alt="G1nuevo" title="G1nuevo" width="149" height="179" /><img src="G2euler.PNG" alt="Grafo2eje" title="Grafo2eje" width="137" height="177" /><img src="G3euler.PNG" alt="Grafo3eje" title="Grafo3eje" width="239" height="166" /></span></p>
+<p style="text-align: left;"><span style="font-size: 16.8px;"></span><span style="color: #ff0000;"><strong>R\.</strong></span> El grafo G1 contiene un circuito euleriano a, e, c, d, e, b, a; ni el grafo G2 ni G3 contienen un circuito euleriano ya que no hay forma de comenzar en un vértice y recorrer todo el grafo sin repetir aristas y llegar al mismo vértice de inicio. </p>
+<p style="text-align: left;">G2 tampoco contiene ningún camino euleriano, y G3 si contiene un camino euleriano a, c, d, e, b, d, a, b. </p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">9. </span>¿Cuáles de los grafos dirigidos contienen un circuito euleriano? Entre aquellos que no lo contienen, ¿cuáles contienen un camino euleriano?</span></p>
+<p style="text-align: center;"><span style="font-size: 16.8px;"><img src="H1euler.PNG" alt="Grafo1ejemplo" title="Grafo1ejemplo" width="151" height="180" /> <img src="H2nuevo.PNG" alt="H2nuevo" title="H2nuevo" width="212" height="205" />    <img src="H3euler.PNG" alt="Grafo3ejemplo" title="Grafo3ejemplo" width="139" height="183" /></span></p>
+<p style="text-align: left;"><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong> </span>El grafo H1 no contiene un circuito euleriano ya que por ejemplo si salimos de a no podremos volver a llegar a el o del vértice b no es posible salir, el grafo H2 si contiene un circuito euleriano a, g, c, b, g, e, d, f, a; el grafo H3 tampoco contiene un circuito euleriano. </span></p>
+<p style="text-align: left;"><span style="font-size: 16.8px;">El grafo H1 no contiene un camino euleriano y el grafo H3 si contiene un camino euleriano c, a, b, c, d, b. </span></p>
+<p style="text-align: left;"><span style="font-size: 16.8px;"><span style="color: #ff0000;">10.</span> Alguno de los siguientes grafos contiene un circuito hamiltoniano, en caso de no contenerlo explicar porque. </span></p>
+<ol>
+<li style="text-align: left;"><span style="font-size: 16.8px;"><img src="hamilton_demostrar.PNG" alt="hamiltonDemostrar" title="hamiltonDemostrar" width="184" height="161" />   2. <img src="fig2ejehamilton.PNG" alt="eje10Hamilton" title="eje10Hamilton" width="214" height="148" /></span></li>
+</ol>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong> </span>El grafo 1 no tiene un circuito hamiltoniano ya que no es posible salir de un nodo y volver a llegar a él sin repetir ningún vértice, el grafo 2 tampoco contiene ningún circuito hamiltoniano ya que tiene un vértice de grado 1 y si salimos de él no podremos regresar. </span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">11.</span> Determina el número de vértices y aristas, y encuentra en grado de entrada y salida de cada vértice para el multigrafo dirigido:</span></p>
+<p><span style="font-size: 16.8px;"><img src="num_eje_9.PNG" alt="eje9" title="eje9" width="303" height="178" /></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong></span> Número de vértices: 5</span></p>
+<p><span style="font-size: 16.8px;">Número de aristas: 13</span></p>
+<p><span style="font-size: 16.8px;">S<sup>-</sup>(a)=6   S<sup>+</sup>(a)= 1;   </span><span style="font-size: 16.8px;">S<sup>-</sup>(b)=1  S<sup>+</sup>(b)=5;    S<sup>-</sup>(c)=2  S<sup>+</sup>(c)=5;    S<sup>-</sup>(d)=4  S<sup>+</sup>(d)=2;   S<sup>-</sup>(e)=0  S<sup>+</sup>(e)=0</span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">12.</span> Encuentra la secuencia de grado de W<sub>5</sub></span></p>
+<p><img src="w5ejemplo.PNG" alt="ejeW5" title="ejeW5" width="177" height="153" /></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;"><strong>R\.</strong></span> 4,3,3,3,3</span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">13.</span> Dibujar todos los subgrafos de este grafo. </span></p>
+<p><span style="font-size: 16.8px;"><img src="Eje53subgrafos.PNG" alt="eje53subgrafo" title="eje53subgrafo" width="140" height="111" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="color: #ff0000;"><strong><span style="font-size: 16.8px;">R\. </span></strong></span></p>
+<p><span style="color: #ff0000;"><strong><span style="font-size: 16.8px;"><img src="subgrafoResp.PNG" alt="RespSubgrafo" title="RespSubgrafo" width="728" height="470" /></span></strong></span></p>
+<p><span style="color: #ff0000;"><strong><span style="font-size: 16.8px;"><img src="2SubgrafosEj.PNG" alt="Resp2Subgrafo" title="Resp2Subgrafo" width="773" height="244" /></span></strong></span><span style="color: #000000;"><strong><span style="font-size: 16.8px;"></span></strong></span></p>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">14.</span> Representar el grafo K<sub>1,4</sub> con una matriz de adyacencia.</span></p>
+<p><span style="font-size: 16.8px;"><img src="k14eje.PNG" alt="ejek14" title="ejek14" width="226" height="214" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="color: #ff0000;"><strong><span style="font-size: 16.8px;">R\.</span></strong></span></p>
+<table border="1" height="5" style="width: 16.4532%;">
+<tbody>
+<tr>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">0</td>
+<td style="width: 20%; text-align: center;">1</td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;">1</td>
+<td style="width: 20%; text-align: center;">1</td>
+<td style="width: 20%; text-align: center;">1</td>
+<td style="width: 20%; text-align: center;">1</td>
+<td style="width: 20%; text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 16.8px;"><span style="color: #ff0000;">15.</span> ¿Forma un camino esta lista de vértices en el siguiente grafo? ¿Es un camino simple? ¿Es un circuito? ¿Cual es la longitud si es un camino?</span></p>
+<ul>
+<li><span style="font-size: 16.8px;">c, b, d, a, e, c</span><span style="font-size: 16.8px;"></span><span style="font-size: 16.8px;"></span></li>
+</ul>
+<p><span style="font-size: 16.8px;"><img src="ejeListaVertices.PNG" alt="ejeListaVertices" title="ejeListaVertices" width="213" height="130" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="font-size: 16.8px;"></span><span style="color: #ff0000;"><strong>R\. </strong><span style="color: #000000;">Es un circuito simple de longitud 5. </span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;">16.</span> Considere el siguiente dibujo de un grafo:</span></span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;"><img src="ej16grafos.png" alt="eje16grafos" title="eje16grafos" width="213" height="184" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p>Responda a las siguientes preguntas, justificando su respuesta:</p>
+<p><span style="color: #ff0000;">1.</span> ¿Tiene el grafo un Ciclo Hamiltoniano?</p>
+<p><span style="color: #ff0000;">2.</span> ¿Tiene el grafo un Circuito de Euler?</p>
+<p><span style="color: #ff0000;">3.</span> ¿Es el grafo bipartito?</p>
+<p><span style="color: #ff0000;">4.</span> Dibuje el grafo para demostrar que es planar.</p>
+<p><span style="color: #ff0000;">5.</span> Dibuje la matriz de adyacencia del grafo.</p>
+<p><span style="color: #ff0000;"><strong>R\. </strong></span></p>
+<p>1. Sí tiene un Ciclo Hamiltoniano: (1; 2; 3; 4; 5; 6; 7; 8; 1).</p>
+<p>2. No tiene un Circuito de Euler, ya que tiene vértices con grado impar.</p>
+<p>3. Sí es bipartito, ya que no tiene ciclos de longitud impar.</p>
+<p>4. El grafo es planar, una representación que lo deja claro puede verse a continuación:</p>
+<p><img src="respuesta4eje16.png" alt="respuesta4eje16" title="respuesta4eje16" width="202" height="193" /></p>
+<p>5. La matriz de adyacencia del grafo es:</p>
+<table border="1" style="width: 29.5342%; height: 180px;" height="230">
+<tbody>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>1</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>2</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>3</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>4</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>5</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>6</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>7</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>8</strong></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>1</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>2</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>3</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>4</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>5</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>6</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>7</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 11.1111%; height: 20px; text-align: center;"><strong>8</strong></td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">1</td>
+<td style="width: 11.1111%; height: 20px; text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ff0000;"><span style="color: #000000;"></span>17.</span> Los datos de matriculación de los alumnos de un curso, compuesto por las ocho asignaturas, i = 1, . . . , 8, indican que las únicas parejas de asignaturas que no tienen simultáneamente alumnos matriculados son a1 y a8, a2 y a8, a1 y a2, a1 y a3, a3 y a4, a5 y a3, a7 y a2.</p>
+<p><span style="color: #ff0000;">1. </span>Encontrar un grafo G que represente esta situación y probar que G no es plano.</p>
+<p><span style="color: #ff0000;">2.</span> Prescindiendo de dos asignaturas se puede obtener un subgrafo plano G′ del grafo G. Encontrar dichas asignaturas y probar que G′ es plano.</p>
+<p style="text-align: left;"><span style="color: #ff0000;"><strong><span style="font-size: 16.8px;">R\.</span></strong></span></p>
+<p style="text-align: left;"><span style="font-size: 16.8px;">1. </span>El primer grafo representa la matricula del curso y no es conexo ya que el subgrafo inducido por los vértices {v4, v5, v6, v7, v8} es el grafo completo K5.</p>
+<p style="text-align: left;"><img src="eje17resp1.png" alt="eje17resp1" title="eje17resp1" width="478" height="194" /></p>
+<p style="text-align: left;">2. El primer grafo es el obtenido al eliminar los vértices correspondientes a las asignaturas a4 y a6 y  el segundo es una inmersión plana del mismo.</p>
+<p style="text-align: left;"><img src="ejemplo17resp2.PNG" alt="ejemplo17resp2" title="ejemplo17resp2" width="435" height="190" /></p>
+<p style="text-align: left;"><span style="color: #ff0000;">18.</span> Consideremos el siguiente grafo</p>
+<p style="text-align: left;"><img src="eje18_grafos.png" alt="eje18 " title="ejemplo18 grafos " width="581" height="260" /></p>
+<p>Dibuja, nombrando los vértices y las aristas utilizadas</p>
+<p><span style="color: #ff0000;">a.</span> Un subgrafo de G de orden 3 con 4 aristas</p>
+<p><span style="color: #ff0000;">b.</span> Un subgrafo de G de orden 4 con 6 aristas</p>
+<p><strong><span style="color: #ff0000;">R\. </span></strong></p>
+<p><span style="color: #000000;">a.</span><strong><span style="color: #ff0000;"><img src="ejemplo18A.PNG" alt="ejemplo18A" title="ejemplo18A" width="209" height="135" /></span></strong></p>
+<p><span style="color: #000000;">b. <img src="ejemplo18B.PNG" alt="ejemplo18B" title="ejemplo18B" width="251" height="155" /></span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">19.</span> Considere el grafo que se muestra a continuación:</span></p>
+<p><span style="color: #000000;"><img src="ejemplo18_grafos_bip.png" alt="ejemplo18 grafos bip" title="ejemplo18 grafos bip" width="279" height="144" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+<p><span style="color: #000000;">Los dos conjuntos distintos de vértices, que hacen que el grafo sea bipartito, son:</span></p>
+<p><span style="color: #000000;"><strong><span style="color: #ff0000;">R\. </span></strong>Los dos conjuntos que hacen que el grafo sea bipartito son (v1, v4, v6, v7); (v2, v3, v5, v8) ya que no hay arista que conecte vértices del mismo conjunto. </span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">20.</span> ¿En cuántas regiones está dividido un grafo plano conexo que tiene seis vértices y cada uno de grados cuatro?</span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;"><strong>R\.</strong></span>  2e= v*4= 6*4= 24</span></p>
+<p><span style="color: #000000;">e=24/2 =12</span></p>
+<p><span style="color: #000000;">r= 12-6+2= 8, el grafo esta dividido en 8 regiones. </span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;">21.</span> Sea el grafo de la figura determine si es bipartito y plano. </span></p>
+<p><span style="color: #000000;"><img src="eje19_grafos.png" alt="ejemplo19" title="ejemplo19" width="186" height="159" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span style="color: #000000;"><span style="color: #ff0000;"><strong>R\.</strong></span>  El grafo es bipartito ya que pueden separarse los vértices en dos grupos A y B.</span></p>
+<p><span style="color: #000000;"><img src="grafos_eje19R.png" alt="Ejemplores19" title="Ejemplores19" width="282" height="197" /></span></p>
+<p><span style="color: #000000;">Para definir si es plano debe cumplir las restricciones y así se podría decir que el grafo podría ser plano. </span></p>
+<p><span style="color: #000000;">v=8; e=16; r=32-8+2= 26</span></p>
+<p><span style="color: #000000;">3r ≤ 2e= r ≤ 21,3= 26 ≤ 10,6 No se cumple </span></p>
+<p><span style="color: #000000;">e ≤ 3v-6 = e ≤ 24-6 = e ≤ 18 = 16 ≤ 18 Si se cumple </span></p>
+<p><span style="color: #000000;">Como hay una de las restricciones que no se cumple se dice que el grafo no es plano.</span></p>
+<p><span style="color: #000000;"></span></p>
+<p><span style="color: #000000;">Aquí podrás encontrar más ejemplos sobre teoría de grafos:</span></p>
+<p><span style="color: #ff0000;"><strong>https://math.libretexts.org/Bookshelves/Combinatorics_and_Discrete_Mathematics/Discrete_Mathematics_(Levin)/4%3A_Graph_Theory/4.E%3A_Graph_Theory_(Exercises)</strong></span></p>
+<p><span style="color: #000000;"></span></p>
+<p><span style="color: #000000;"></span></p>
+<p><span style="color: #000000;"></span></p>
+<p><span style="color: #000000;"></span></p>
+<p></p></div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
