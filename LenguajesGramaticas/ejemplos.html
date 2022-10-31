@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Ejemplos | Matemáticas Discretas II Gramáticas </title>
+<meta name="author" content="Laura Maca" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body id="exe-node-34" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">Ejemplos</h1></div></header>
+<article class="iDevice_wrapper textIdevice" id="id122">
+<div class="iDevice emphasis0" >
+<div id="ta122_117_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><span style="font-size: 18pt; color: #ff0000; font-family: 'book antiqua', palatino, serif;"><em><strong>EJEMPLOS</strong></em></span></p>
+<p style="text-align: left;"><span style="color: #ff0000;">1.</span> ¿Cuál es la cerradura de kleene de A={a,bb}?<br /><span style="color: #ff0000;">   <strong> R\.</strong></span>  A*= A0 U A1 U A2 U A3 U ... An<br />    A*={E} U {a,bb} U {aa,abb,bba,bbbb} U {aaa,aabb,abba,abbbb,bbaa,bbabb,bbbba,bbbbbb} ...<br />    A*={E, a, bb, aa, abb, bba, bbbb, aaa, aabb, abba, abbbb, bbaa, bbabb, bbbba, bbbbbb ...}<br /> </p>
+<ul>
+<li>¿Cuál es la cerradura de kleene de B={0,11}</li>
+</ul>
+<p><span style="color: #ff0000;"><strong>    R\.</strong></span> B*={E, 0, 11, 00, 011, 110, 1111, 000, 0011, 0110, 01111, 1100, 11011, 11110, 111111}<br />    B+={0, 11, 00, 011, 110, 1111, 000, 0011, 0110, 01111, 1100, 11011, 11110, 111111}</p>
+<p><span style="color: #ff0000;">2.</span> Dado el conjunto C={a,aba,abba} indique hasta C2 en la cerradura de kleene:<br /><span style="color: #ff0000;">    <strong>R\</strong>.</span> C*={E, a, aba,abba, aa, aaba, aabba, aaba, abaaba, abaabba, aabba, abaabba, abbaabba}<br /> </p>
+<p><span style="color: #ff0000;">3.</span> Dado el alfabeto {0,1} definir los siguientes lenguajes regulares:</p>
+<p>    -Lenguaje que tiene la cadena 11:<br /><span style="color: #ff0000;">    <strong>R\.</strong></span> L1={0U1}* {11} {OU1}*</p>
+<p><br />    -Lenguaje que inicia en 1, tiene la cadena 11 y termina en 00:<br /><span style="color: #ff0000;">    <strong>R\.</strong></span> L2={1} {0U1}* {01} {0U1}* {00}</p>
+<p><br /><span style="color: #ff0000;">4.</span> Interprete el tipo de palabras que pertenecen al siguiente lenguaje:<br />    L={a}*{b}*<br /><span style="color: #ff0000;">    <strong>R\</strong><strong>.</strong></span> Cadenas que tienen 0 o más a's seguidas de 0 o más b's</p>
+<p><span style="color: #ff0000;">5.</span> Sea A={0,11} y B={00,01} encuentra cada conjunto<br />    a. AB <strong><span style="color: #ff0000;">R\.</span></strong> {000, 001, 1100, 1101}<br />    b. A<sup>2</sup><strong><span style="color: #ff0000;"> R\</span>.</strong> {00, 011, 110, 1111}</p>
+<p><span style="color: #ff0000;">6.</span> Dada la expresión regular E=0*10*, obtenga el lenguaje que representa:</p>
+<p>    <span style="color: #ff0000;"><strong>R\.</strong></span></p>
+<p>           L= {0}*{1}{0}* = {0n10m | n,m &gt;= 0}</p>
+<p><span style="color: #ff0000;">7.</span> Determine si la cadena 11101 esta en estos conjuntos <br />    - {0,1}*<br /><span style="color: #ff0000;">    <strong>R\.</strong></span> Si<br />    - {11}{0}*{01}<br /><span style="color: #ff0000;">    <strong>R\.</strong></span> No</p>
+<p><span style="color: #ff0000;">8.</span> Describa en palabras las cadenas de los siguientes conjuntos regulares: <br />    -1*0<br /><span style="color: #ff0000;">    <strong>R\.</strong></span> Cualquier numero de 1's seguido de un 0<br />    -(1 U 00)* <br /><span style="color: #ff0000;">    <strong>R\.</strong></span> Una cadena de cualquier numero de 1's o 00's<br />    -(0 U 1) (0 U 1)* 00<br /><span style="color: #ff0000;">    <strong>R\.</strong></span> Una cadena de al menos 3 caracteres que termine en 00</p>
+<p><span style="color: #ff0000;">9.</span> Exprese cada uno de estos conjuntos mediante una expresión regular<br />    -El conjunto formado por las cadenas 0, 11 y 010<br /><span style="color: #ff0000;">  <strong>  R\.</strong></span> 0U11U010</p>
+<p>    -El conjunto de cadenas de tres 0's seguidos de dos o mas 0's<br />    <strong><span style="color: #ff0000;">R\.</span></strong> 000000*</p>
+<p><span style="color: #ff0000;">10.</span> Indique las expresiones regulares que describen los siguientes idiomas.</p>
+<p>     L := {w ∈ {a, b}∗ | la subcadena ab aparece exactamente dos veces en w, pero no al final}</p>
+<p><span style="color: #ff0000;"><strong>     R\.</strong></span>   b<sup>∗</sup>a<sup>+</sup>b<sup>+</sup>a<sup>+</sup>b(b<sup>+</sup>a<sup>∗</sup>+b<sup>∗</sup>a<sup>+</sup>)</p>
+<p><span style="color: #ff0000;">11.</span> Diseñe el autómata finito determinístico que acepta el lenguaje L1 = {a<sup>n</sup>cb<sup>m</sup> / n&gt;0 y m≥0 }</p>
+<p>     <span style="color: #ff0000;"><strong>R\.</strong></span><img src="eje11automatas.png" alt="eje11automatas" title="eje11automatas" width="399" height="110" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ff0000;">12.</span> Para el lenguaje dado sobre Σ = {a, b}, construir una expresión regular de él y un Autómata Finito que lo acepte:</p>
+<p>         L={ w | w tiene un numero múltiplo de 3 de a′s }</p>
+<p>     <span style="color: #ff0000;"><strong>R\. </strong></span><span style="color: #000000;">Una expresión regular para este lenguaje es: b<sup>∗</sup>(ab<sup>∗</sup>ab<sup>∗</sup>a)<sup>∗</sup>. </span></p>
+<p><span style="color: #000000;">         El diagrama de transición de un Autómata Finito es:</span><img src="ejem12Automatas.png" alt="ejem12Automatas" title="ejem12Automatas" width="413" height="169" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ff0000;">13.</span> Diseñe un autómata finito determinista para reconocer cadenas de la forma a+b*cda*b</p>
+<p><img src="ejeab.PNG" alt="ejea+b" title="ejea+b" width="707" height="286" /></p>
+<p><span style="color: #ff0000;">14.</span> Diseñar el AF sobre Σ={0,1} que reconozca en binario el lenguaje de todos los múltiplos de 2. </p>
+<p><img src="automata_0y1.PNG" alt="eje0y1" title="eje0y1" width="416" height="140" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span style="color: #ff0000;">15.</span> Diseñe un autómata finito determinista para reconocer cadenas de la forma a*b*Ub*a*</p>
+<p><img src="automata_abuba.PNG" alt="ejAbuba" title="ejAbuba" width="648" height="270" style="display: block; margin-left: auto; margin-right: auto;" /><span style="color: #ff0000;">16.</span> Diseñe un autómata finito determinista para reconocer cadenas de la forma a*bb (a U b)*</p>
+<p><img src="automata_abbaub.PNG" alt="ejeabb" title="ejeabb" width="424" height="243" style="display: block; margin-left: auto; margin-right: auto;" /><span style="color: #ff0000;">17.</span> Diseñe un AFD Σ={a,b,c} que reconozca (a U b)+ (abc U (c)* ba (c)+)</p>
+<p><img src="ejealfabetoabc.PNG" alt="ejeAlfabeto" title="ejeAlfabeto" width="688" height="481" /></p>
+<p><span style="color: #ff0000;">18</span>. Diseñe un autómata finito determinista para reconocer cadenas de la forma (b U c) (a+ U bca*)</p>
+<p><img src="eje_bUC_aUbca.PNG" alt="ejemplobUc" title="ejemplobUc" width="724" height="428" /></p>
+<p><span style="color: #ff0000;">19.</span> ¿Cuál de las siguientes expresiones regulares NO es equivalente a la expresión regular (a + b + c)*?</p>
+<p><span style="color: #ff0000;">a.</span> (a* + b* + c*)*</p>
+<p><span style="color: #ff0000;">b.</span> (a B C*)*</p>
+<p><span style="color: #ff0000;">c.</span> ((ab)* + c*)*</p>
+<p><span style="color: #ff0000;">d.</span> (a*b* + c*)*</p>
+<p><strong><span style="color: #ff0000;">R\.</span></strong>  La expresión regular que no es equivalente es la C, ya que siempre generará cadenas con "ab" juntas. </p>
+<p><span style="color: #ff0000;">20.</span> Determine cual de las expresiones regulares es adecuada para el idioma que tiene los alfabetos de entrada a y b, en el que dos a no se juntan:<br /><span style="color: #ff0000;">(A)</span> (b + ab)* + (b +ab)*a<br /><span style="color: #ff0000;">(B)</span> a(b + ba) )* + (b + ba)*</p>
+<p><span style="color: #ff0000;"><strong>R\.</strong></span> Ambas opciones (A) y (B) son expresiones regulares correctas para el alfabeto, ya que ambas pueden iniciar por a por b y dos a no se juntaran. </p>
+<p></p>
+<ul></ul>
+<p></p></div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
