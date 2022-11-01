@@ -1,0 +1,186 @@
+// question: 0  name: Switch category to $course$/top/Por defecto en Matematicas
+$CATEGORY: $course$/top/Por defecto en Matematicas
+
+
+// question: 0  name: Switch category to $course$/top/Por defecto en Matematicas/Grafos
+$CATEGORY: $course$/top/Por defecto en Matematicas/Grafos
+
+
+// question: 4204136  name: Dado el grafo G con matriz de adyacencia:
+::Dado el grafo G con matriz de adyacencia\:::[html]Dado el grafo G con matriz de adyacencia\:<br><img src\="@@PLUGINFILE@@/ejemplo14Matriz.png" alt\="matriz de adyacencia eje 14" width\="137" height\="112" class\="img-fluid atto_image_button_text-bottom"><br>{
+	=[moodle]G tiene un camino euleriano
+	~[moodle]G no es conexo
+	~[moodle]G tiene un vértice de grado 5
+	~[moodle]G es un pseudografo
+	~[moodle]Ninguna de las anteriores
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">Los grados de los vértices son respectivamente\:&nbsp;</span><span style\="font-size\: 0.9375rem;">3,2,4,2,3; como hay exactamente dos vértices con&nbsp;</span><span style\="font-size\: 0.9375rem;">grado impar, admite un camino euleriano.</span><br></p>
+}
+
+
+// question: 4204135  name: Dado el grafo de la figura se tiene:
+::Dado el grafo de la figura se tiene\:::[html]Dado el grafo de la figura se tiene\:<br><img src\="@@PLUGINFILE@@/ejemplo12Grafo.png" alt\="Grafo no dirigido " width\="144" height\="126" class\="img-fluid atto_image_button_text-bottom"><br>{
+	=[moodle]Circuito Hamiltoniano
+	~[moodle]Circuito Euleriano
+	~[moodle]Bipartito
+	~[moodle]Vacio
+	~[moodle]Ninguna de las anteriores
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">Contiene un ciclo hamiltoniano, n</span><span style\="font-size\: 0.9375rem;">o es euleriano porque hay seis vértices que tienen&nbsp;</span><span style\="font-size\: 0.9375rem;">grado 3, es decir grado impar.</span><br></p><p dir\="ltr"><span style\="font-size\: 0.9375rem;">Tampoco es bipartito, ni vació.&nbsp;</span></p>
+}
+
+
+// question: 4204137  name: El número máximo de aristas en un grafo bipartito en 14 vértices es
+::El número máximo de aristas en un grafo bipartito en 14 vértices es::[html]El número máximo de aristas en un grafo bipartito en 14 vértices es{
+	~[moodle]56
+	~[moodle]14
+	=[moodle]49
+	~[moodle]87
+	~[moodle]Ninguna de las anteriores
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">El número de aristas sería máximo cuando hay 7 aristas en cada lado y cada vértice está conectado a los 7 vértices del otro lado.</span><br></p><p dir\="ltr" style\="text-align\: left;">7*7\=49</p>
+}
+
+
+// question: 4204138  name: Encuentra la unión del par de los grafos simple
+::Encuentra la unión del par de los grafos simple::[html]<p dir\="ltr" style\="text-align\: left;">Encuentra\nla unión del par de los grafos\nsimples\:<br></p><p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje5Grafos%20.PNG" alt\="ejemplo5Grafos " width\="370" height\="172" class\="img-fluid atto_image_button_text-bottom"><br></p>{
+	=<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/ejemplo5A.PNG" alt\="ejemplo 5 A union" width\="151" height\="181" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje5B.PNG" alt\="ejemplo 5 B union" width\="144" height\="168" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje5C.PNG" alt\="ejemplo 5 C union" width\="152" height\="165" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje5D.PNG" alt\="ejemplo 5 D union" width\="141" height\="179" class\="img-fluid atto_image_button_text-bottom"><br></p>
+}
+
+
+// question: 4204139  name: Encuentre la secuencia de grados del grafo K2,3
+::Encuentre la secuencia de grados del grafo K2,3::[html]Encuentre la secuencia de grados del grafo K2,3{
+	~[moodle]2,2,2,2,2
+	~[moodle]2,2,3,3,3
+	~[moodle]3,3,3,3,3
+	~[moodle]3,3,2,2,3
+	=[moodle]3,3,2,2,2
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">Son 2 vértices de grado 3 y 3 vértices de grado 2.&nbsp;</span><br></p>
+}
+
+
+// question: 4204140  name: Los dos grafos de la figura:
+::Los dos grafos de la figura\:::[html]Los dos grafos de la figura\:<br><img src\="@@PLUGINFILE@@/ejemplo13%20grafosIso.png" alt\="grafos isomorfos o no isomorfos" width\="322" height\="104" class\="img-fluid atto_image_button_text-bottom"><br>{
+	~[moodle]Son isomorfos pues tienen el mismo número de vértices y de aristas.
+	~[moodle]Son isomorfos porque se puede establecer un isomorfismo entre ellos.
+	=[moodle]No son isomorfos pues en uno hay dos vértices de grado 2 y en el otro hay tres vértices de grado 2.
+	~[moodle]Son grafos completos.
+	~[moodle]Ninguna de las anteriores
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">Analizando los grados de los vértices\:&nbsp;&nbsp;</span><span style\="font-size\: 0.9375rem;">Grados del grafo 1º\: 2, 3, 4, 2, 3, 4;&nbsp;&nbsp;</span><span style\="font-size\: 0.9375rem;">Grados del grafo 2º\: 2, 4, 2, 4, 2, 4;&nbsp;</span><span style\="font-size\: 0.9375rem;">Si existiera un isomorfismo se tendría que&nbsp;</span><span style\="font-size\: 0.9375rem;">conservar el grado de los vértices isomorfos.</span><br></p><p dir\="ltr"><br></p>
+}
+
+
+// question: 4204141  name: Matriz de adyacencia del siguiente grafo
+::Matriz de adyacencia del siguiente grafo::[html]<p>Matriz de adyacencia del siguiente grafo\:</p><p><img src\="@@PLUGINFILE@@/eje7MatrizA.png" alt\="Grafo para matriz de adyacencia " width\="149" height\="131" class\="img-fluid atto_image_button_text-bottom"><br></p>{
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje7matrizA1.PNG" alt\="ejemplo 7 matrizA1" width\="63" height\="82" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje7matrizA2.PNG" alt\="ejemplo 7 matrizA2" width\="66" height\="79" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	=<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje7matrizA3.PNG" alt\="ejemplo 7 matrizA3" width\="65" height\="79" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje7matrizA4.PNG" alt\="ejemplo 7 matrizA4" width\="65" height\="82" class\="img-fluid atto_image_button_text-bottom"><br></p>
+}
+
+
+// question: 4204142  name: Observe el siguiente grafo, que representa una serie de edificios y unos ...
+::Observe el siguiente grafo, que representa una serie de edificios y unos ...::[html]Observe el siguiente grafo, que representa una serie de edificios y unos puentes que los conectan. Marque las afirmaciones que son verdaderas\:<br><img src\="@@PLUGINFILE@@/eje16Test.png" alt\="Ejemplo edificios" width\="276" height\="176" class\="img-fluid atto_image_button_text-bottom"><br>{
+	~[moodle]El grafo es bipartito
+	~[moodle]El grafo tiene un circuito de Euler
+	=[moodle]El grafo no es bipartito
+	~[moodle]Es un multígrafo
+	~[moodle]Ninguna de las anteriores
+}
+
+
+// question: 4204143  name: Si G es el bosque con 54 vértices y 17 componentes conexas, G tiene _______ ...
+::Si G es el bosque con 54 vértices y 17 componentes conexas, G tiene _______ ...::[html]Si G es el bosque con 54 vértices y 17 componentes conexas, G tiene _______ número total de aristas.{
+	~[moodle]38
+	=[moodle]37
+	~[moodle]17/54
+	~[moodle]17/53
+	~[moodle]42
+	####<p dir\="ltr" style\="text-align\: left;">Aquí nos dan un bosque con 54 vértices y 17 componentes.&nbsp;Un componente es en sí mismo un árbol y dado que hay 17 componentes significa que cada componente tiene una raíz, por lo que tenemos 17 raíces.&nbsp;Cada nuevo vértice del bosque contribuye a un solo borde de un bosque.&nbsp;Entonces, para los 54-17 \= 37 vértices restantes, podemos tener mn \= 37 aristas.&nbsp;Por lo tanto, la respuesta es 37.<br></p>
+}
+
+
+// question: 4204144  name: Un departamento de una empresa tiene establecidas dos redes locales de ...
+::Un departamento de una empresa tiene establecidas dos redes locales de ...::[html]Un departamento de una empresa tiene establecidas dos redes locales de comunicación distintas entre sus ocho terminales. Las líneas de conexión de cada red están esquematizadas en los siguientes grafos\: ¿Los grafos que representan las redes I y II son isomorfos?<br><img src\="@@PLUGINFILE@@/ejeRedes.png" alt\="ejemplo de redes " width\="756" height\="280" class\="img-fluid atto_image_button_text-bottom"><br>{
+	~[moodle]Si, existe isomorfismo entre ellos.
+	~[moodle]Solo el grafo de la red I es isomorfo
+	~[moodle]Solo el grafo de la red II es isomorfo
+	=[moodle]No son isomorfos
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">No lo son. El segundo grafo tiene ciclos de longitud 3 y el primero no.</span><br></p>
+}
+
+
+// question: 4204145  name: Un grafo no dirigido tiene 8 vértices etiquetados con 1, 2, ..., 8 y 31 ...
+::Un grafo no dirigido tiene 8 vértices etiquetados con 1, 2, ..., 8 y 31 ...::[html]Un grafo no dirigido tiene 8 vértices etiquetados con 1, 2, ..., 8 y 31 aristas. Los vértices 1, 3, 5, 7 tienen grado 8 y los vértices 2, 4, 6, 8 tienen grado 7. ¿Cuál es el grado del vértice 8?{
+	~[moodle]15
+	=[moodle]8
+	~[moodle]5
+	~[moodle]23
+	####<p dir\="ltr" style\="text-align\: left;">Los vértices 1, 3, 5, 7 tienen grado 8 y los vértices 2, 4, 6, 8 tienen grado 7. Por definición, suma de grado \= 2 * No de aristas<br>Sea x \= grado de vértice 8<br>8 + 7 + 8 + 7 + 8 + 7 + 8 + x \= 2 * 31<br>53 + x \= 61<br>x \= 8<br><br></p>
+}
+
+
+// question: 4204129  name: ¿Cuál es el grado de un grafo plano que consta de 8 vértices y 15 aristas?
+::¿Cuál es el grado de un grafo plano que consta de 8 vértices y 15 aristas?::[html]¿Cuál es el grado de un grafo plano que consta de 8 vértices y 15 aristas?{
+	=[moodle]30
+	~[moodle]15
+	~[moodle]45
+	~[moodle]106
+	~[moodle]Ninguna de las anteriores
+	####<p dir\="ltr" style\="text-align\: left;">Si G es un grafo plano con n vértices y m aristas, entonces r(G) \= 2m, es decir, el grado o rango de G es igual al doble del número de aristas en G. Entonces, el rango de la grafo es 2*15\=30 que tiene 8 vértices y 15 aristas<br></p>
+}
+
+
+// question: 4204130  name: ¿Cuál es el número de vértices en un grafo conexo no dirigido con 39 aristas,...
+::¿Cuál es el número de vértices en un grafo conexo no dirigido con 39 aristas,...::[html]¿Cuál es el número de vértices en un grafo conexo no dirigido con 39 aristas, 7 vértices de grado 2, 2 vértices de grado 5 y el resto de grado 6?{
+	~[moodle]11
+	~[moodle]14
+	=[moodle]18
+	~[moodle]19
+	~[moodle]20
+	####<p dir\="ltr" style\="text-align\: left;">Sabemos que suma de grados de todos los vértices \= 2 * número de aristas<br>2*7 + 5*2 + 6*x \= 39*2<br>x\=9<br>Número de vértices \= 7 + 2 + 9 \= 18<br></p>
+}
+
+
+// question: 4204131  name: ¿Cuál es la matriz de adyacencia del grafo K4?
+::¿Cuál es la matriz de adyacencia del grafo K4?::[html]<p>¿Cuál es la matriz de adyacencia del grafo K4? </p><p><br></p>{
+	=<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje6MatrizA1.PNG" alt\="ejemplo 6 MatrizA1" width\="65" height\="78" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje6MatrizA2.PNG" alt\="ejemplo 6 MatrizA2" width\="66" height\="86" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje6MatrizA3.PNG" alt\="ejemplo 6 MatrizA3" width\="67" height\="80" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje6MatrizA4.PNG" alt\="ejemplo 6 MatrizA4" width\="79" height\="97" class\="img-fluid atto_image_button_text-bottom"><br></p>
+}
+
+
+// question: 4204132  name: ¿Cuántas aristas tiene un grafo si su secuencia de grados es 5,2,2,2,2,1?
+::¿Cuántas aristas tiene un grafo si su secuencia de grados es 5,2,2,2,2,1?::[html]¿Cuántas aristas tiene un grafo si su secuencia de grados es 5,2,2,2,2,1?{
+	~[moodle]12
+	~[moodle]10
+	~[moodle]8
+	=[moodle]7
+	~[moodle]11
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">5+2+2+2+2+1\=14/2\=<strong>7</strong> aristas&nbsp;</span><br></p>
+}
+
+
+// question: 4204133  name: ¿Tiene el siguiente grafo un circuito de Euler o un camino de Euler?
+::¿Tiene el siguiente grafo un circuito de Euler o un camino de Euler?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>¿Tiene el siguiente grafo un circuito de Euler o un camino de Euler?</p><img src\="@@PLUGINFILE@@/eje26Euler%20.PNG" alt\="ejemplo 26 Euler " width\="369" height\="250" class\="img-fluid atto_image_button_text-bottom"><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Si, tiene un circuito de Euler </p><br><p></p>
+	=<p dir\="ltr" style\="text-align\: left;"></p><p>No, no tiene ni circuito ni camino de Euler <br></p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Si, tiene un camino Euler </p><br><p></p>
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">El grafo no tiene circuito o camino de Euler porque tiene 4 vértices de grado impar.</span><br></p>
+}
+
+
+// question: 4204134  name: ¿Tiene el siguiente grafo un circuito o camino euleriano?
+::¿Tiene el siguiente grafo un circuito o camino euleriano?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>¿Tiene el siguiente grafo un circuito o camino euleriano?</p><img src\="@@PLUGINFILE@@/eje11Euler.png" alt\="grafo para camino o circuito euler " width\="311" height\="164" class\="img-fluid atto_image_button_text-bottom"><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Si, tiene un circuito euleriano<br></p><br><p></p>
+	=<p dir\="ltr" style\="text-align\: left;"></p><p>No, no tiene ni circuito ni camino euleriano</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Si, tiene un camino euleriano</p><br><p></p>
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">El grafo no es euleriano,&nbsp;Obsérvese que hay cuatro vértices de grado impar.&nbsp;</span><br></p>
+}
+
+
+// question: 4204146  name: El siguiente grafo es bipartito
+::El siguiente grafo es bipartito::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>Marque verdadero o falso\:</p><p>El siguiente grafo es bipartito.</p><p><img src\="@@PLUGINFILE@@/ejemplo2Bipartito.PNG" alt\="grafoejemplo2" width\="228" height\="172" class\="img-fluid atto_image_button_text-bottom"><br></p><br><p></p>{FALSE####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">No es posible separar los vértices en dos grupos sin que un vértice sea adyacente a otro.&nbsp;</span><br></p>}
+
+
