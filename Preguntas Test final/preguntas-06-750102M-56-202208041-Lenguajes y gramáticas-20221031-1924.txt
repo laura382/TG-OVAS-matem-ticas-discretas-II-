@@ -1,0 +1,175 @@
+// question: 0  name: Switch category to $course$/top/Por defecto en Matematicas
+$CATEGORY: $course$/top/Por defecto en Matematicas
+
+
+// question: 0  name: Switch category to $course$/top/Por defecto en Matematicas/Lenguajes y gramáticas
+$CATEGORY: $course$/top/Por defecto en Matematicas/Lenguajes y gramáticas
+
+
+// question: 4204162  name: Considere el DFA dado.  ¿Cuáles de las siguientes son FALSAS?
+::Considere el DFA dado.  ¿Cuáles de las siguientes son FALSAS?::[html]<p dir\="ltr" style\="text-align\: left;">Considere el DFA dado.&nbsp;&nbsp;¿Cuáles de las\nsiguientes son FALSAS?<br></p><p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/ejemplo2%20.png" alt\="Automata ejemplo 2" width\="324" height\="289" class\="img-fluid atto_image_button_text-bottom"><br></p><p dir\="ltr" style\="text-align\: left;"></p><p><!--[if !supportLists]-->-&nbsp;<!--[endif]-->El\ncomplemento de L (A) es libre de contexto.</p>\n\n<p><!--[if !supportLists]-->-&nbsp;L\n(A) \= L ((11*0+0) (0+1)*0*1*)</p>\n\n<p><!--[if !supportLists]-->-&nbsp;Para\nel idioma aceptado por A, A es el DFA mínimo. </p>\n\n<p><!--[if !supportLists]-->-&nbsp;A\nacepta todas las cadenas superiores a \{0,1\} de longitud al menos 2. </p><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Solo 1 y 3</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Solo 2 y 4</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Solo 2 y 3 </p><br><p></p>
+	=<p dir\="ltr" style\="text-align\: left;"></p><p>Solo 3 y 4</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;">Solo 1&nbsp;</p>
+	####<p dir\="ltr" style\="text-align\: left;">El 1 es cierto. Si L(A) es regular, su complemento también lo será. Un lenguaje regular también es libre de contexto. 2 es verdadera. 3 es falso, el DFA puede ser minimizado a dos estados. Donde el segundo estado es el estado final y llegamos al segundo estado después de un 0. 4 es claramente falso ya que el DFA acepta un solo 0.<br></p>
+}
+
+
+// question: 4204163  name: Considere el siguiente autómata de estado finito. El lenguaje aceptado por este autómata viene dado por la expresión regular
+::Considere el siguiente autómata de estado finito. El lenguaje aceptado por este autómata viene dado por la expresión regular::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>Considere el siguiente autómata de estado finito.&nbsp;El lenguaje\naceptado por este autómata viene dado por la expresión regular</p><img src\="@@PLUGINFILE@@/ejemplo8%20Automa.png" alt\="Automata ejemplo8 " width\="491" height\="201" class\="img-fluid atto_image_button_text-bottom"><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;">b*ab*ab*ab*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">(a+b)*<br></p>
+	=<p dir\="ltr" style\="text-align\: left;">b* a\n(a+b)*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">b*\nab* ab*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">Ninguna de las anteriores&nbsp;</p>
+	####<p dir\="ltr" style\="text-align\: left;">En este caso, tendríamos que alcanzar al menos q1 para que nuestra cadena sea aceptada. Por lo tanto, b* a es la cadena más pequeña aceptada. Ahora, en q1, cualquier cadena con cualquier número de a y b sería aceptada. Por lo tanto, añadimos (a + b)* a la cadena más pequeña aceptada.<br></p>
+}
+
+
+// question: 4204164  name: Dado el idioma L = {ab, aa, baa}, ¿cuáles de las siguientes cadenas están en L*?
+::Dado el idioma L \= \{ab, aa, baa\}, ¿cuáles de las siguientes cadenas están en L*?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>Dado el idioma L \= \{ab, aa, baa\}, ¿cuáles de las siguientes cadenas\nestán en L*?</p>\n\n<p><!--[if !supportLists]-->-&nbsp;abaabaaaba</p>\n\n<p><!--[if !supportLists]-->-&nbsp;aaaabaaaa</p>\n\n<p><!--[if !supportLists]-->-&nbsp;<!--[endif]-->baaaaabaaaab</p>- baaaaabaa<br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>1, 2 y 3</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>2, 3 y 4</p><br><p></p>
+	=<p dir\="ltr" style\="text-align\: left;"></p><p>1, 2 y 4</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>1, 3 y 4</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;">Ninguna de las anteriores</p>
+}
+
+
+// question: 4204165  name: El lenguaje reconocido por M es:
+::El lenguaje reconocido por M es\:::[html]<p dir\="ltr" style\="text-align\: left;">Considere la máquina\nM\:<br></p><p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/eje10%20AutomatM%20.png" alt\="Automata M ejemplo10" width\="507" height\="188" class\="img-fluid atto_image_button_text-bottom"><br></p><p dir\="ltr" style\="text-align\: left;"></p><p>El lenguaje reconocido por M es\:</p><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;">\{w ϵ \{a,b\}* / cada a en w\nes seguida exactamente por dos b’s\}<br></p>
+	=<p dir\="ltr" style\="text-align\: left;">\{w ϵ \{a,b\}* cada a en w va seguida de al\nmenos dos b’s\}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{w ϵ \{a,b\}* w contiene la\nsubcadena ‘abb’\}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{w ϵ \{a,b\}* w no contiene\n‘aa’ como subcadena\}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">Ninguna de las anteriores&nbsp;</p>
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">w ∈ \{a, b\}* significa que w puede ser cualquier cadena del conjunto de \{a, b\}* y \{a, b\}* es un conjunto de todas las cadenas compuestas por a y b (cualquier cadena de a y b que se te ocurra) como ε, a, b, aaa, abbaaa, bbbbb, aaaaaa, aaaabbbbaabbababab, etc.</span><br></p>
+}
+
+
+// question: 4204166  name: La definición de un idioma L con el alfabeto { a } se da a continuación.
+::La definición de un idioma L con el alfabeto \{ a \} se da a continuación.::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>La definición de un idioma L con el alfabeto \{&nbsp;<em>a</em>&nbsp;\} se da a\ncontinuación.</p>\n\n<p>L\= \{ a<sup>nk </sup>&nbsp;| k&gt;0, y n es una constante entera\npositiva\}</p><p><span style\="font-size\: 0.9375rem;">¿Cuál es el número mínimo de\nestados necesarios en DFA para reconocer L?</span></p><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;">k+1</p>
+	=<p dir\="ltr" style\="text-align\: left;">n+1</p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>2^(n+1)</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>2^(k+1)</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;">Ninguna de las anteriores</p>
+}
+
+
+// question: 4204167  name: Si el conjunto regular 'A' está representado por A= (01+1)* y el conjunto regular 'B' está representado por B= ((01)* 1*)* , ¿cuál de las siguientes es verdadera?
+::Si el conjunto regular 'A' está representado por A\= (01+1)* y el conjunto regular 'B' está representado por B\= ((01)* 1*)* , ¿cuál de las siguientes es verdadera?::[html]<p dir\="ltr" style\="text-align\: left;">Si el conjunto regular 'A'\nestá representado por&nbsp;<em>A\= (01+1)*</em>&nbsp;y el conjunto regular 'B' está\nrepresentado por&nbsp;<em>B\= ((01)* 1*)*</em>&nbsp;, ¿cuál de las siguientes es\nverdadera?<br></p>{
+	~<p dir\="ltr" style\="text-align\: left;">A <b>⊂</b>&nbsp;B<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">B <b>⊂</b>&nbsp;A<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">A y B son incompatibles<br></p>
+	=<p dir\="ltr" style\="text-align\: left;">A\=B</p>
+	~<p dir\="ltr" style\="text-align\: left;">Ninguna de las anteriores&nbsp;</p>
+}
+
+
+// question: 4204152  name: ¿Cuál de las expresiones regulares dadas a continuación representa el siguiente DFA?
+::¿Cuál de las expresiones regulares dadas a continuación representa el siguiente DFA?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>¿Cuál de las expresiones regulares dadas a continuación\nrepresenta el siguiente DFA?</p><p><img src\="@@PLUGINFILE@@/eje9%20Automata01.png" alt\="Automata0y1" width\="291" height\="135" class\="img-fluid atto_image_button_text-bottom"><br></p><p></p><p><!--[if !supportLists]-->I. 0*1(1+00*1)*</p>\n\n<p><!--[if !supportLists]-->II. 0*1*1+11*0*1</p>\n\n<p><!--[if !supportLists]-->III.&nbsp;<!--[endif]-->(0+1)*1</p><br><p></p><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;">I y\nII solamente<br></p>
+	=<p dir\="ltr" style\="text-align\: left;">I y III solamente<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">II\ny III solamente<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">I,\nII y III<br></p>
+	~Ninguna de las anteriores&nbsp;
+}
+
+
+// question: 4204153  name: ¿Cuál de las siguientes expresiones regulares describe el lenguaje sobre {0, 1} que consta de cadenas que contienen exactamente dos 1?
+::¿Cuál de las siguientes expresiones regulares describe el lenguaje sobre \{0, 1\} que consta de cadenas que contienen exactamente dos 1?::[html]<p dir\="ltr" style\="text-align\: left;">¿Cuál de las siguientes\nexpresiones regulares describe el lenguaje sobre \{0, 1\} que consta de cadenas\nque contienen exactamente dos 1?<br></p>{
+	~<p dir\="ltr" style\="text-align\: left;">(0+1)* 11(0+1)*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>0*110*</p><br><p></p>
+	=<p dir\="ltr" style\="text-align\: left;">0*10*10*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">(0+1)* 1(0+1)* 1(0+1)*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">0*1*11*1*00<br></p>
+}
+
+
+// question: 4204154  name: ¿Cuál de las siguientes expresiones regulares representa el idioma: el conjunto de todas las cadenas binarias que tienen dos 0 consecutivos y dos 1 consecutivos?
+::¿Cuál de las siguientes expresiones regulares representa el idioma\: el conjunto de todas las cadenas binarias que tienen dos 0 consecutivos y dos 1 consecutivos?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>¿Cuál de\nlas siguientes expresiones regulares representa el idioma\: el conjunto de todas\nlas cadenas binarias que tienen dos 0 consecutivos y dos 1 consecutivos?</p><img src\="@@PLUGINFILE@@/eje14%20expresiones%20.jpg" alt\="Expresiones ABCD " width\="419" height\="118" class\="img-fluid atto_image_button_text-bottom"><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;">A</p>
+	=<p dir\="ltr" style\="text-align\: left;">B</p>
+	~<p dir\="ltr" style\="text-align\: left;">C</p>
+	~<p dir\="ltr" style\="text-align\: left;">D</p>
+}
+
+
+// question: 4204155  name: ¿Cuál de las siguientes máquinas de estados finitos es una DFA mínima válida que acepta el mismo lenguaje que D?
+::¿Cuál de las siguientes máquinas de estados finitos es una DFA mínima válida que acepta el mismo lenguaje que D?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>A continuación se proporciona una automatización finita\ndeterminista (DFA)D con el alfabeto \{a,b\}.&nbsp;&nbsp;</p>\n\n<p><a href\="http\://www.geeksforgeeks.org/wp-content/uploads/gq/2013/12/GATE2011AT1.png"><img src\="@@PLUGINFILE@@/ejemplo5.png" alt\="ejemplo5 automata " width\="429" height\="183" class\="img-fluid atto_image_button_text-bottom"><br><!--[endif]--></a></p>\n\n<p>¿Cuál de\nlas siguientes máquinas de estados finitos es una DFA mínima válida que acepta\nel mismo lenguaje que D?</p><br><p></p>{
+	=<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/ejemplo5%20A%20.PNG" alt\="automata A " width\="271" height\="177" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/ejemplo5%20B.PNG" alt\="Automata B " width\="280" height\="134" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/ejemplo5%20C.PNG" alt\="Automata C " width\="300" height\="99" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	~<p dir\="ltr" style\="text-align\: left;"><img src\="@@PLUGINFILE@@/ejemplo5%20D.PNG" alt\="Automata D" width\="230" height\="173" class\="img-fluid atto_image_button_text-bottom"><br></p>
+	####<p dir\="ltr" style\="text-align\: left;">Las opciones (B) y (C) no\nson válidas porque ambas aceptan 'b' como una cadena que no acepta give DFA.&nbsp;(D)\nno es válido porque acepta "bba" que DFA no acepta.<br></p>
+}
+
+
+// question: 4204156  name: ¿Cuál de los siguientes es verdadero?
+::¿Cuál de los siguientes es verdadero?::[html]<p dir\="ltr" style\="text-align\: left;">¿Cuál de los siguientes es verdadero?<br></p>{
+	~<p dir\="ltr" style\="text-align\: left;">Todo subconjunto de un conjunto regular es regular.<br></p>
+	=<p dir\="ltr" style\="text-align\: left;">Todo subconjunto finito de un conjunto no regular es regular.<br></p>#<p dir\="ltr" style\="text-align\: left;">Todo subconjunto finito de un conjunto no regular es regular es Verdadero.&nbsp;Todos y cada uno de los conjuntos que son finitos pueden tener un DFA bien definido, por lo que, ya sea un subconjunto de un conjunto regular o un conjunto no regular, siempre es regular.<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">La unión de dos conjuntos no regulares no es regular.<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">La unión infinita de conjuntos finitos es regular<br></p>
+	####<p dir\="ltr" style\="text-align\: left;">Todo subconjunto finito de un conjunto no regular es regular es Verdadero.&nbsp;Todos y cada uno de los conjuntos que son finitos pueden tener un DFA bien definido, por lo que, ya sea un subconjunto de un conjunto regular o un conjunto no regular, siempre es regular.<br></p>
+}
+
+
+// question: 4204157  name: ¿Cuál de los siguientes idiomas sobre el alfabeto {0,1} se describe mediante la expresión regular: (0+1)*0(0+1)*0(0+1)* ?
+::¿Cuál de los siguientes idiomas sobre el alfabeto \{0,1\} se describe mediante la expresión regular\: (0+1)*0(0+1)*0(0+1)* ?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>¿Cuál de los siguientes idiomas sobre el alfabeto \{0,1\}\nse describe mediante la expresión regular\: (0+1)*0(0+1)*0(0+1)* ?</p><br><p></p>{
+	~<p dir\="ltr" style\="text-align\: left;">El\nconjunto de todas las cadenas que contienen la subcadena 00.<br></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>El conjunto de todas las cadenas que\ncontienen como máximo 2 ceros.</p><br><p></p>
+	=<p dir\="ltr" style\="text-align\: left;"></p><p>El conjunto de todas las cadenas que\ncontienen al menos 2 ceros.</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>El conjunto de todas las cadenas que\ncomienzan y terminan con 0 y 1.</p><br><p></p>
+	####<p dir\="ltr" style\="text-align\: left;">La expresión regular tiene dos 0′s rodeados de (0+1)* lo que significa que las cadenas aceptadas deben tener al menos 2 0′s.<br></p>
+}
+
+
+// question: 4204158  name: ¿Cuál es el lenguaje aceptado por el siguiente Autómata finito determinista?
+::¿Cuál es el lenguaje aceptado por el siguiente Autómata finito determinista?::[html]<p dir\="ltr">¿Cuál es el lenguaje aceptado por el siguiente Autómata finito&nbsp;<span style\="font-size\: 0.9375rem;">determinista?.</span></p><p dir\="ltr"><span style\="font-size\: 0.9375rem;"><img src\="@@PLUGINFILE@@/ejemploautomata17.PNG" alt\="automata eje17" width\="485" height\="433" class\="img-fluid atto_image_button_text-bottom"><br></span></p>{
+	~<p dir\="ltr" style\="text-align\: left;">\{ w | w comienza por ab \} sobre \{ a, b \}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{ w | w comienza por a o comienza por b \} sobre \{ a, b \}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{ w | w no comienza por a \} sobre \{ a, b \}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{ w | w tiene a ab por subcadena \} sobre \{ a, b \}<br></p>
+	=<p dir\="ltr" style\="text-align\: left;">\{ w | w tiene al menos una a y tiene al menos una b\} sobre \{a, b\}<br></p>
+}
+
+
+// question: 4204159  name: ¿Cuál es el lenguaje aceptado por el siguiente autómata finito determinista?
+::¿Cuál es el lenguaje aceptado por el siguiente autómata finito determinista?::[html]<p dir\="ltr">¿Cuál es el lenguaje aceptado por el siguiente autómata finito&nbsp;<span style\="font-size\: 0.9375rem;">determinista?</span></p><p dir\="ltr"><span style\="font-size\: 0.9375rem;"><img src\="@@PLUGINFILE@@/ejemplo17%20.PNG" alt\="automata ejemplo17" width\="414" height\="353" class\="img-fluid atto_image_button_text-bottom"><br></span></p>{
+	=<p dir\="ltr" style\="text-align\: left;">\{ w | w comienza por b y termina en a \} sobre \{ a, b \}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{ w | w comienza por b y tiene al menos una a \} sobre \{ a, b \}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{ w | w comienza por ba \} sobre \{ a, b \}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{ w | w no comienza por a \} sobre \{ a, b \}<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">\{b\}\{b\}* \{a\}\{a\}*sobre \{ a, b \}<br></p>
+}
+
+
+// question: 4204160  name: ¿Cuáles de los siguientes son conjuntos regulares?
+::¿Cuáles de los siguientes son conjuntos regulares?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>¿Cuáles de los siguientes son conjuntos regulares?</p><img src\="@@PLUGINFILE@@/ejemplo7%20Regulares%20.png" alt\="Lista de conjutos regulares " width\="275" height\="118" class\="img-fluid atto_image_button_text-bottom"><br><p></p>{
+	=<p dir\="ltr" style\="text-align\: left;"></p><p>Solamente I y IV</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;"></p><p>Solamente I y III</p><br><p></p>
+	~<p dir\="ltr" style\="text-align\: left;">Solo\nI<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">Solo\nIV<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">Solo\nII<br></p>
+	####<p dir\="ltr" style\="text-align\: left;"><span style\="font-size\: 0.9375rem;">Los conjuntos II&nbsp; y III&nbsp;&nbsp;no son regulares porque no hay forma de que un autómata finito recuerde n.</span></p>
+}
+
+
+// question: 4204161  name: ¿Qué expresión regular describe mejor el lenguaje aceptado por el siguiente autómata no determinista?
+::¿Qué expresión regular describe mejor el lenguaje aceptado por el siguiente autómata no determinista?::[html]<p dir\="ltr" style\="text-align\: left;"></p><p>¿Qué\nexpresión regular describe mejor el lenguaje aceptado por el siguiente autómata\nno determinista?</p><img src\="@@PLUGINFILE@@/eje15%20Automata%20.png" alt\="Automata AB " width\="304" height\="140" class\="img-fluid atto_image_button_text-bottom"><br><p></p>{
+	=<p dir\="ltr" style\="text-align\: left;">(a+b)* a(a+b)b<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">(abb)*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">(a+b)*\na(a+b)* b(a+b)*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">(a+b)*<br></p>
+	~<p dir\="ltr" style\="text-align\: left;">Ninguna de las anteriores&nbsp;</p>
+}
+
+
+// question: 4204168  name: Sea el lenguaje A ={ε, ac, b}
+::Sea el lenguaje A \=\{ε, ac, b\}::[html]<p dir\="ltr" style\="text-align\: left;">Sea el lenguaje A \=\{ε, ac, b\}, Responda V o F.<br></p><p dir\="ltr" style\="text-align\: left;">(bac)<sup>20&nbsp; </sup>∈ A<sup>20</sup></p>{FALSE}
+
+
